@@ -49,3 +49,6 @@ td.cell :hover{
     
     cursor: pointer;
 }
+.timer{
+    height: 40px;
+}
