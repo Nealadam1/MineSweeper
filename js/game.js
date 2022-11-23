@@ -275,6 +275,6 @@ function renderInfo(){
 
 function renderFlagCount(){
     const elFlagCount=document.querySelector('.flag-count')
-    elFlagCount.innerText
+    
 
 }
