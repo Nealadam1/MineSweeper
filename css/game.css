@@ -1,33 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: "DS-DIGI";
+    src: url(../font/DS-DIGI.TTF) format("truetype");
+}
+html{
+    height:100%
+}
+
+body {
+    text-align: center;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color:whitesmoke;
+    font-family:sans-serif;
+    font-size: 15px;
+    
+}
 
 
-.game-container{
+.game-container {
     margin: auto;
-    height: 600px;
-    background-color: grey;
-}
-
-.level-btn{
-    background-color: lightslategray;
-    height: 50px;
-}
-
-.level-btn button{
-    height: 40px;
-}
-
-.game-board{
-    height: 400px;
-    margin: auto;
-}
-
-table{
-    height
-    : 500px;
+    margin-top: 200px;
+    height: 550px;
     width: 400px;
     background-color: lightgray;
+    border-bottom: 2px solid #7B7B7B;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #7B7B7B;
 }
 
-td{
+.level-btn {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 50, 155, 1) 37%, rgba(185, 219, 254, 1) 100%);
+    height: 35px;
+    text-align: left;
+    
+}
+
+.game-board {
+    height: 400px;
+    width: 388px;
+    margin: auto;
+    border-top: 2px solid #7B7B7B;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #7B7B7B;
+    
+}
+
+button {
+    font-family: 'MS Sans Serif';
+    text-align: left;
+    font-size: 14px;
+    height: 30px;
+    width: 100px;
+    background-color: #BFBFBF;
+    color: black;
+    border-bottom: 2px solid #7B7B7B;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #7B7B7B;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+
+button:hover {
+    background-color: lightgray;
+    color: slategray;
+    cursor: pointer;
+}
+
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    background-color: lightgray;
+    margin: 0px;
+}
+
+td {
+    font-family: 'Press Start 2P', cursive;
     height: 20px;
     width: 20px;
     background-color: #C0C0C0;
@@ -39,16 +101,118 @@ td{
     text-align: center;
     vertical-align: middle;
 }
+
 .shown {
     background-color: #C0C0C0;
     font-size: 80%;
     text-align: center;
-    border: none;
+    border: 1.5px solid;
+    border-color: #C0C0C0;
 }
-td.cell :hover{
-    
+.shown:hover{
+    cursor: not-allowed;
+
+}
+
+td:hover {
+
     cursor: pointer;
 }
-.timer{
-    height: 40px;
+
+.timer {
+    font-family: 'DS-DIGI';
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: red;
+    background-color: black;
+    text-align: center;
+    padding: 4px 4px 0 7px;
+    line-height: 1em;
+    margin: 20px;
+
+}
+
+.flags-count {
+    font-family: 'DS-DIGI';
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: red;
+    background-color: black;
+    text-align: center;
+    padding: 4px 4px 0 7px;
+    line-height: 1em;
+    margin: 20px;
+
+}
+
+.info {
+
+    padding: 2px;
+    margin: 6px;
+    border-top: 2px solid #7B7B7B;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #7B7B7B;
+}
+
+.reset {
+    font-family: 'MS Sans Serif';
+    text-align: left;
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+    background-color: #BFBFBF;
+    color: black;
+    border-bottom: 2px solid #7B7B7B;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #7B7B7B;
+
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    height: 36px;
+    background-color: #BFBFBF;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+.hint img:hover{
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: initial;
+}
+
+.smaller{
+    height: 50px;
+}
+
+
+.blue {
+    color: blue;
+}
+
+.purple {
+    color: purple;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red
+}
+.redbg{
+    background-color: red;
 }
